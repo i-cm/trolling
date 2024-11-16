@@ -1,0 +1,17 @@
+<h1>badgame</h1>
+<button id="click">Click</button>
+<br>
+<span id="clicks">0</span> clicks
+
+
+<script>
+  !(function() {
+    var player = {
+      clicks: 0,
+    }
+    document.getElementById("click").addEventListener("click", function() {
+      player.clicks++
+      document.getElementById("click").innerHTML = player.clicks
+    })
+  })()
+</script>
