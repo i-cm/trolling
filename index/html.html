@@ -2,7 +2,9 @@
 <button id="click">Click</button>
 <br>
 <span id="clicks">0</span> clicks
-
+<br>
+<span id="health">100</span> health
+<br>
 
 <script>
   !(function() {
@@ -11,7 +13,7 @@
     }
     document.getElementById("click").addEventListener("click", function() {
       player.clicks++
-      document.getElementById("click").innerHTML = player.clicks
+      document.getElementById("clicks").innerHTML = player.clicks
     })
   })()
 </script>
